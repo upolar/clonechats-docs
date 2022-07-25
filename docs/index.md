@@ -39,7 +39,7 @@ Chegou a hora de baixar e configurar o clonechat.
 
 ### Baixando o Clonechat
 
-De maneira geral você pode baixar o Clonechat de três formas. O download direto e o git vão te garantir as versões mais atualizadas. O canal 
+De maneira geral você pode baixar o Clonechat de três formas. O download direto e o git vão te garantir as versões mais atualizadas. E via canal do Telegram (algumas vezes pode estar desatualizado).
 
 !!! note ""
     === "Download Direto"
@@ -92,4 +92,28 @@ Com as credenciais nas mãos chegou a hora de usa-las.
   ```
 5. Salve e feche.
 
-Neste momento o clonechat já está configurado para ser usado. Avance para a página seguinte de como usa-lo.
+#### Atualizando dependências
+
+Para que o clonechat funcionar ele ainda depende de alguns outros programas. 
+!!! note ""
+    === "Windows"
+        O clonechat vem com um arquivo para ajuda-lo a instalar as dependências.
+
+        Basta executar o arquivo `update_libs.bat` e ao final da instalação apertar qualquer tecla.
+
+    === "Linux"
+        Abra o terminal do Linux e vá até a pasta do clonechat. 
+        
+        Execute o comando:
+
+        `pip -r requirements.txt`
+
+    === "Celular"
+        Abra o aplicativo Pydroid 3, toque no menu sanduíche (☰) e vá em `Pip`.
+      
+        Na aba `Install` instalaremos algumas dependências. Digite os nomes das bibliotecas abaixo no campo `Library name`, uma por vez, e depois clique em `Install`.
+
+        - TgCrypto
+        - pyrogram 
+
+Se tudo ocorreu bem, neste momento o clonechat já está configurado e as dependências estão instaladas. Avance para a página seguinte para saber como usa-lo.
