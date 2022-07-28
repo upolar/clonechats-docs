@@ -16,7 +16,7 @@ Não. Para fazer o backup de canais/grupos nessa situação é preciso baixar o 
 
 ### Existe risco de usar o clonechat? Se sim, quais?
 
-**Não e sim**. O clonechat vem configurado com um tempo de envio entre cada mensagem de `10 segundos` para evitar problemas. Além disso recomendamos uma clonagem de até 1000 postagens no modo usuário por dia. Não recomendamos deixar o tempo menor que 6 segundos!
+**Não e sim**. O clonechat vem configurado com um tempo de envio entre cada mensagem de `10 segundos` para evitar problemas. Além disso recomendamos uma clonagem de até 1000 postagens no modo usuário por dia. Não recomendamos deixar o tempo menor que 10 segundos!
 
 ### Consigo copiar canais com compartilhamento restrito?
 
@@ -58,6 +58,7 @@ Bot token é a credencial de acesso para controlar um bot de telegram.
 O encaminho de mensagens por bot é mais rápido. O telegram limita a permissão sobre volume de postagens de forma diferente entre a interface de usuário e a interface de bots. Para manter a segurança e ficar livre de punições do telegram, é recomendável que a conta do usuário não encaminhe mais que 6 mensagens por minuto. Já para bots, o limite sobe para 60 mensagens por minuto. Assim, o Clonechat opera 10 vezes mais rápido quando em `mode=bot`.
 
 O uso em modo bot possui algumas exigências:
+
 - No arquivo `config.ini`, a flag `mode` precisa ser alterada para `bot`
 - O bot precisa ser administrador do canal de origem
 - Sua conta do telegram precisa fazer parte do canal de origem

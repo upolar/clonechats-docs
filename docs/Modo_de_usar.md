@@ -32,7 +32,7 @@
 
         Abra o terminal do Windows ou Linux na pasta do clone chat e digite o comando abaixo.
 
-        > Comando: python clonechat.py --orig={chat_id do canal/grupo de origem} --dest=-{chat_id do canal/grupo de destino}``
+        > python clonechat.py --orig={chat_id do canal/grupo de origem} --dest=-{chat_id do canal/grupo de destino}``
 
         Exemplo: `python clonechat.py --orig=-100222222 --dest=-10011111111`
 
