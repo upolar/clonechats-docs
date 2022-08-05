@@ -20,12 +20,24 @@
         Após confirmar o id de origem e o id de destino aparecerá um menu para filtragem.
 
         - Digite uma opção de filtro de arquivos dentre as disponíveis.
+        ```
+        0 - Clona todos os arquivos
+        1 - Fotos
+        2 - Apenas texto
+        3 - Documentos (pdf, zip, rar, ...)
+        4 - Stickers/figurinhas
+        5 - GIF'salvar
+        6 - Arquivos de áudio (música)
+        7 - Mensagens de voz
+        8 - Vídeos
+        9 - Enquetes
+        ```
         - Se quiser clonar todos os arquivos digite o número zero `0`.
         - Você pode selecionar múltiplas opções as separando com vírgulas. Ex.: `1,3` para clonar apenas fotos e documentos.
 
         * Informe se deseja iniciar uma nova clonagem ou continuar uma clonagem iniciada anteriormente
             - Digite `1` para iniciar uma clonagem do zero.
-            - ou `2` para continuar uma clonagem já iniciada.
+            - ou `2` para continuar uma clonagem já iniciada
             - Confirme com [ENTER]
 
     === "Terminal"
