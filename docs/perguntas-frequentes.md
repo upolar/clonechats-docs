@@ -22,34 +22,54 @@ Não. Para fazer o backup de canais/grupos nessa situação é preciso baixar o 
 
 **Não**. O clonechat funciona com o princípio de encaminhar mensagens de um canal/grupo para outro, se não for possível encaminhar mensagens do chat de origem você terá que baixar todos os arquivos e upa-los para o Telegram com outro programa.
 
+---
+
+## Grupos e canais
+
 ### Como pegar o chat_id de um grupo/canal?
 
-* Existem várias formas de obter o chat_id de um canal. Mostraremos três delas:
-- Usando o telegram client [Kotatogram](https://kotatogram.github.io/download/):
-  - Acesse a tela de descrição do canal
-  - Copie o `chat_id` que aparece abaixo do nome do canal
+Existem várias formas de obter o chat_id de um canal. Mostraremos três delas:
+#### 
+- [Usando um app não oficial](#usando-um-app-nao-oficial): Para computador.
+- [Usando um bot](#usando-um-bot): Computador & celular.
+- [Pelo link da postagem](#pela-url-de-uma-postagem): Computador & celular. Funciona apenas para grupos/canais PRIVADOS!
 
-- Usando bot Find_TGIDbot:
-  - Acesse e inicie bot [@Find_TGIDbot](http://t.me/Find_TGIDbot) ou [@myidbot](http://t.me/myidbot)
-  - Encaminhe qualquer postagem do canal para este bot
-  - O bot responderá com o ID do remetente da mensagem. Neste caso, o ID do canal.
+#### Usando um app não oficial
+!!! tip "IMPORTANTE"
+        Vale ressaltar que canais começam com o número '-100'. O Kotatogram e a url da postagem não informam o prefixo '-100' então você deve o digitar manualmente.
+
+- Usando o [64Gram](https://github.com/TDesktop-x64/tdesktop/releases):
+
+    - Em `Assets` você verá algumas opções de download. Se você estiver no Windows toque em uma das opções em que o nome termina com `.exe`;
+    - Instale e faça login na sua conta; e, por fim:
+    - Abra o canal que deseje ver o ID, toque em seu nome para ver as informações do canal e copie o ID do canal (channel id).
+
+<br>
+
+- Usando o [Kotatogram](https://kotatogram.github.io/download/):
+    - Baixe e instale;
+    - Abra o canal e clique em seu nome para abrir as informações do canal; e, por fim:
+    - Copie o `chat_id` que aparece abaixo do nome do canal
+
+#### Usando um bot
+
+- Acesse e inicie o bot [@myidbot](http://t.me/myidbot)
+- Encaminhe qualquer postagem do canal ou grupo para este bot. No caso de grupos você precisa encaminhar a mensagem de um administrador anônimo OU pegar o id usando o [computador](#usando-um-app-não-oficial-computador).
+- O bot responderá com o ID do remetente da mensagem. Neste caso, o ID do canal.
 - Copie o `chat_id` (incluindo o sinal de subtração).
 
+#### Pela URL de uma postagem
+!!! tip "IMPORTANTE"
+        Vale ressaltar que canais começam com o número '-100'. O Kotatogram e a url da postagem não informam o prefixo '-100' então você deve o digitar manualmente. 
 - Pela url de uma postagem (apenas grupos ou canais PRIVADOS!)
-    - Clique em uma mensagem do canal ou grupo e vá em `Copiar link da Mensagem`
+    - Clique com o botão direito (computador) ou toque na mensagem (celular) em uma mensagem do canal/grupo e vá em `Copiar link da Mensagem`
         - Você terá algo como  "https://t.me/c/1684031683/160"
         - O que nos interessa são os números antes da última barra, ou seja:  `1684031683`
-
-!!! info "IMPORTANTE"
-        Vale ressaltar que canais começam com o número '-100'. O Kotatogram e a url da postagem não informam o prefixo '-100' então você deve o digitar manualmente.
-        O exemplo acima ficaria:
-        `-1001684031683`.
-        
-> Exemplo de um código de canal: `-1001623956859`
+        - Como o ID que eu copiei acima é de um canal é preciso adicionar o -100, então o ID CORRETO do canal ficaria: `-1001684031683`.
 
 ---
 
-## :robot: Bots
+## Bots :robot:
 
 ### O que é um bot token e por que usar?
 
@@ -74,4 +94,7 @@ Geração:
   - Feito isso, você receberá o código bot_token.
 
 Ativação:
-- Cadastre o bot_token na flag bot_token do arquivo `credentials.py`. Remova o '#' no início da linha.
+
+- Edite o arquivo `credentials.py`.
+- Remova o '#' do inicio da linha do bot_token. Se atente a não deixar um espaço antes de bot_token.
+- Troque os "bbbbbbbbbbbbb" pelo seu token gerado acima. 
