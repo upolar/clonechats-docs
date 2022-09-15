@@ -26,7 +26,7 @@
         2 - Apenas texto
         3 - Documentos (pdf, zip, rar, ...)
         4 - Stickers/figurinhas
-        5 - GIF'salvar
+        5 - GIF's
         6 - Arquivos de áudio (música)
         7 - Mensagens de voz
         8 - Vídeos

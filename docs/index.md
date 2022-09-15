@@ -106,7 +106,7 @@ Para que o clonechat funcionar ele ainda depende de alguns outros programas.
         
         Execute o comando:
 
-        `pip -r requirements.txt`
+        `pip -r install requirements.txt`
 
     === "Celular"
         Abra o aplicativo Pydroid 3, toque no menu sanduíche (☰) e vá em `Pip`.
