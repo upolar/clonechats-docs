@@ -16,7 +16,7 @@ Não. Para fazer o backup de canais/grupos nessa situação é preciso baixar o 
 
 ### Existe risco de usar o clonechat? Se sim, quais?
 
-**Não e sim**. O clonechat vem configurado com um tempo de envio entre cada mensagem de `10 segundos` para evitar problemas. Além disso recomendamos uma clonagem de até 1000 postagens no modo usuário por dia. Não recomendamos deixar o tempo menor que 10 segundos!
+Não, se você **NÃO alterar o tempo entre cada mensagem**. O clonechat vem configurado com um tempo de envio entre cada mensagem de `10 segundos` para evitar problemas. Além disso recomendamos uma clonagem de até 1000 postagens no modo usuário por dia. Não recomendamos deixar o tempo menor que 10 segundos!
 
 ### Consigo copiar canais com compartilhamento restrito?
 
@@ -49,7 +49,7 @@ Existem várias formas de obter o chat_id de um canal. Mostraremos três delas:
 - Usando o [Kotatogram](https://kotatogram.github.io/download/):
     - Baixe e instale;
     - Abra o canal e clique em seu nome para abrir as informações do canal; e, por fim:
-    - Copie o `chat_id` que aparece abaixo do nome do canal
+    - Copie o `chat_id` que aparece abaixo do nome do canal (incluindo o sinal de negativo)
 
 #### Usando um bot
 
@@ -66,6 +66,23 @@ Existem várias formas de obter o chat_id de um canal. Mostraremos três delas:
         - Você terá algo como  "https://t.me/c/1684031683/160"
         - O que nos interessa são os números antes da última barra, ou seja:  `1684031683`
         - Como o ID que eu copiei acima é de um canal é preciso adicionar o -100, então o ID CORRETO do canal ficaria: `-1001684031683`.
+
+---
+## Mensagens do terminal
+
+### Blank id
+
+O clonechat testa TODOS os ID de mensagem. E caso essa mensagem tenha sido excluida, ele só sabe que foi excluida quando chega nela. Por isso o blank id. Não entendeu? Explico:
+
+Imagine que um órgão do governo quer testar todos os CPF do Brasil, independente se o CPF é de alguem vivo ou não. 
+Só que sabemos bem que alguns dos CPF pertencem a pessoas que já faleceram, certo?
+
+- O órgão executa um programa e quando o CPF de um vivo é testado ele mostra todos os dados da pessoa.
+- Já quando o CPF de um falecido é testado aparece a seguinte mensagem na tela: "CPF não pertence a alguem vivo"
+- Nesse exemplo o CPF do falecido é o mesmo que nosso blank id. 
+- Já pertenceu a alguem / alguma mensagem mas acabou sendo excluida/falecida.
+
+Afinal, devemos nos preocupar? Não! Apenas esperar o programa ir testar o próximo CPF/mensagem. Uma hora ele encontra alguém vivo/mensagem que existe e puxa os dados (no nosso caso encaminha pro canal que queremos).
 
 ---
 

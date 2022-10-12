@@ -78,23 +78,9 @@ Para obter as credenciais para a API do Telegram:
         **NÃO passe ou mostre suas credenciais para ninguém! Se for pedir ajuda oculte essas informações SEMPRE!**
   - Para assistir o processo em detalhes, assista [este vídeo](https://www.youtube.com/watch?v=8naENmP3rg4) que exemplifica tudo rapidamente.
 
-#### Editando as credenciais
-
-Com as credenciais nas mãos chegou a hora de usa-las.
-
-1. Abra a pasta onde você extraiu o clonechat. 
-2. No menu iniciar digite "Bloco de Notas" e aperte `ENTER`.
-3. Arraste o arquivo `credentials.py` para dentro do bloco de notas para edita-lo.
-4. Coloque as suas credenciais no arquivo. Caso o `api_id` e o `api_hash` gerados no passo [anterior](#obtendo-credenciais-da-api-do-telegram) sejam `1234896` e `f329148fajv991908`, respectivamente, o arquivo deve ficar dessa maneira:
-  ``` {.py}
-  api_id = 1234896
-  api_hash = "f329148fajv991908"
-  ```
-5. Salve e feche.
-
 #### Atualizando dependências
 
-Para que o clonechat funcionar ele ainda depende de alguns outros programas. 
+Para o clonechat funcionar ele depende de alguns outros programas. 
 !!! note ""
     === "Windows"
         O clonechat vem com um arquivo para ajuda-lo a instalar as dependências.
@@ -115,5 +101,12 @@ Para que o clonechat funcionar ele ainda depende de alguns outros programas.
 
         - TgCrypto
         - pyrogram 
+
+### Colocando as credenciais
+
+Agora você deve colocar as credenciais logo ao executar o arquivo `exec_clonechat`. Assim que executar ele vai pedir o `api_id` e o `api_hash`. Você fez esses dois no passo [Obtendo as credenciais do Telegram](#obtendo-credenciais-da-api-do-telegram)
+
+
+Na tela que aparecer cole primeiro o api_id e dê enter. Em seguida ele pedirá o api_hash, cole e dê enter também.
 
 Se tudo ocorreu bem, neste momento o clonechat já está configurado e as dependências estão instaladas. Avance para a página seguinte para saber como usa-lo.

@@ -3,10 +3,8 @@
     === "Menu (Windows)"
         ## Iniciando
         
-        Execute o arquivo `exec_clonechat.bat`
-
-        * Digite o chat_id do canal/grupo de origem. Se o `ctrl+v` não funcionar, clique com o botão direito do mouse no terminal.
-
+        * Digite o chat_id do canal/grupo de origem.
+        
         !!! faq "Pegando o chat_id de um canal/grupo"
                 Leia a nossa seção de [como pegar o chat_id de um grupo/canal](./perguntas-frequentes.md#como-pegar-o-chat_id-de-um-grupocanal) nas Perguntas Frequentes. 
 
